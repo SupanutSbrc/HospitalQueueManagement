@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="infowidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>-1</y>
+     <width>1201</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#infowidget{
+background-color:qlineargradient(spread:pad, x1:0.187, y1:0.840909, x2:1, y2:0, stop:0 rgba(255, 140, 137, 255), stop:1 rgba(255, 223, 255, 255));}</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>130</y>
+      <width>491</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>41</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string>Queue</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>390</y>
+      <width>1021</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20;
+border-color: rgb(255, 85, 127);
+background-color: rgb(255, 238, 244);
+color: rgb(106, 32, 106);</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>Queue Number</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>19</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Arrival Time</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>19</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Priority</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>19</pointsize>
+      </font>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="removeq">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>730</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20;
+background-color: rgb(255, 233, 245);
+color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string>Remove Queue</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>330</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>19</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 19pt &quot;Constantia&quot;;
+color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string>Description:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>270</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>19</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 19pt &quot;Constantia&quot;;
+color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string>Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>330</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>19</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 19pt &quot;Constantia&quot;;
+color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string>Queue Number: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>270</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>19</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 19pt &quot;Constantia&quot;;
+color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string>Priority:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="priorityafter">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>270</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>19</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 19pt &quot;Constantia&quot;;
+color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arrivalafter">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>330</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>19</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 19pt &quot;Constantia&quot;;
+color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameafter">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>270</y>
+      <width>401</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>19</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 19pt &quot;Constantia&quot;;
+color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="queueafter">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>330</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>19</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 19pt &quot;Constantia&quot;;
+color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>110</y>
+      <width>1061</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 85, 127);
+font: 18pt;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>180</y>
+      <width>791</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>17</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string>The patient with the following queue please contact the reception</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>70</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: rgb(244, 42, 69);</string>
+    </property>
+    <property name="text">
+     <string>Our Beloved Hospital</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>10</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>logo rere.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>140</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>4</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>q rere.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="returnbutt">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>19</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Return&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20;
+background-color: rgb(255, 233, 245);
+color: rgb(106, 32, 106);</string>
+    </property>
+    <property name="text">
+     <string>Return     </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>30</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>back re.png</pixmap>
+    </property>
+   </widget>
+   <zorder>pushButton_3</zorder>
+   <zorder>label</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>removeq</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_3</zorder>
+   <zorder>priorityafter</zorder>
+   <zorder>arrivalafter</zorder>
+   <zorder>nameafter</zorder>
+   <zorder>queueafter</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>returnbutt</zorder>
+   <zorder>label_11</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

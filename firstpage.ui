@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1241</width>
+    <height>792</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="infowidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>-10</y>
+     <width>1261</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#infowidget{
+background-color:qlineargradient(spread:pad, x1:0.187, y1:0.840909, x2:1, y2:0, stop:0 rgba(255, 140, 137, 255), stop:1 rgba(255, 223, 255, 255));}</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>160</y>
+      <width>941</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>38</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(244, 42, 69);</string>
+    </property>
+    <property name="text">
+     <string>Our Beloved Hospital</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="gotoinfopage">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>370</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20;
+color: rgb(106, 32, 106);
+background-color: rgb(255, 171, 194);
+</string>
+    </property>
+    <property name="text">
+     <string>Insert Queue</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="seeque">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>470</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20;
+color: rgb(106, 32, 106);
+background-color: rgb(255, 171, 194);
+</string>
+    </property>
+    <property name="text">
+     <string>Display Queue</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchque">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>570</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20;
+color: rgb(106, 32, 106);
+background-color: rgb(255, 171, 194);
+</string>
+    </property>
+    <property name="text">
+     <string>Search Queue</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>240</y>
+      <width>941</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Constantia</family>
+      <pointsize>36</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(244, 42, 69);</string>
+    </property>
+    <property name="text">
+     <string>Queing Management System</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>1071</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20;
+border-color: rgb(255, 85, 127);
+font: 18pt;
+background-color: rgb(255, 238, 244);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>1111</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20;
+background-color: rgb(255, 255, 255);
+border-color: rgb(255, 85, 127);
+font: 18pt;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>160</y>
+      <width>111</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>logo re.png</pixmap>
+    </property>
+   </widget>
+   <zorder>pushButton_3</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>label</zorder>
+   <zorder>gotoinfopage</zorder>
+   <zorder>seeque</zorder>
+   <zorder>searchque</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
